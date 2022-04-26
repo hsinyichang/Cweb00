@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    overflow: hidden;
+}
+
+/*body .main*/
+.main{
+    display: flex;/*使這個大外框為彈性的*/
+    width: 1024px;
+    height: 768px;
+    padding: 0 12px;/*(1024-1000)/2*/
+    margin: 10px auto;/*這裡要注意，要讓畫面置中*/
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/*統一畫外框線border*/
+body>*:not(aside,section),/*裡面的這兩個左右大區塊不要在畫框，*/
+aside>*,/*因為左右側的大區塊不需要再包一個框線，所以選擇他的下層*/
+section>*{
+    border: 1px solid lightgray;
+}
+/*    也可用這兩行來畫線
+    .top,.menu,.update,.marquee,.content,.footer{
+    border: 1px solid lightgray;
+} */
+
+.top{/*上區塊*/
+    flex-basis: 1000px;
+    height: 65px;
+}
+/*-------------------------------------------------*/
+.aside{/*左區塊*/
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);/*左側的高*/
+    display: flex;/*因為左右區塊需要排在同一列，所以要設他的外框為彈性*/
+    flex-direction: column;/*因為彈性關係下面兩個小區塊是為橫排在同一列，所以包在左側裡面的兩個區塊要直行顯示*/
+}
+    
+    .menu{/*選單區*/
+        flex-basis: calc(100% - 25px);
+        font-family: '標楷體';
+    }
+
+    .update{/*日期更新區*/
+    flex-basis: 25px;
+    font-family: '標楷體';
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    }
+/*--------------------------------------------------*/
+.section{/*右區塊*/
+    flex-basis: calc(1000px - 215px);/*原圖的770和215加起來沒有1000，所以這裡直接相減*/
+    display: flex;/*因為左右區塊需要排在同一列，所以要設他的外框為彈性*/
+    flex-direction: column;/*因為彈性關係下面兩個小區塊是為橫排在同一列，所以包在右側裡面的兩個區塊要直行顯示*/
+    
+}
+    .marquee{/*跑馬燈*/
+        flex-basis: 29px;
+        font-family: '標楷體';
+        font-size: 24px;
+        color: #0000FF;
+        padding: 0 calc((100%- 770px -2px)/2);
+    }
+    .content{/*網頁內容區*/
+        flex-basis: 654px;
+        
+    }
+/*--------------------------------------------------*/
+.footer{/*下區塊*/
+    flex-basis: 1000px;
+    height: 20px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+.menu{
+    text-align: center;
+}
+table{
+    
+    margin: 10px auto;
+}
+.menu1{
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF00FF;
+    border-bottom: 1px solid black;
+}
+.menu2{
+    margin-left: auto;
+    margin-right:auto;
+    font-weight: 500;
+    width: 93.5%;
+    height: 35px;
+    color: #000000;
+    font-size: 16px;
+    background-image:url(/images/menu1.png) ;
+}
+.menu2:hover{
+    background-image: url(/images/menu2.png);
+}
