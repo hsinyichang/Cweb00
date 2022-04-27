@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    overflow: auto;
+    overflow-x:hidden;
 }
 .box{
     display: flex;
