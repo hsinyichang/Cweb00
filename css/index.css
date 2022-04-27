@@ -6,7 +6,7 @@
 
 /*body .main*/
 .main{
-    display: flex;/*使這個大外框為彈性的*/
+    display: flex;/*使這個大外框為彈性的*//*flex都是放在container裡*/
     width: 1024px;
     height: 768px;
     padding: 0 12px;/*(1024-1000)/2*/
@@ -41,7 +41,7 @@ section>*{
 }
     
     .menu{/*選單區*/
-        flex-basis: calc(100% - 25px);
+        flex-basis: calc(100% - 25px);/*因為這個區塊為column，所以basis為高度*/
         font-family: '標楷體';
         text-align: center;
     }
@@ -83,7 +83,7 @@ section>*{
     
 }
     .marquee{/*跑馬燈*/
-        flex-basis: 29px;
+        flex-basis: 29px;/*column的關係，所以這裡為高*/
         font-family: '標楷體';
         font-size: 24px;
         color: #0000FF;
