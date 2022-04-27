@@ -11,7 +11,6 @@
     height: 768px;
     padding: 0 12px;/*(1024-1000)/2*/
     margin: 10px auto;/*這裡要注意，要讓畫面置中*/
-    text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     
@@ -56,13 +55,11 @@ section>*{
         border-bottom: 1px solid black;
     }
     .menu2{/*6個社團的表格*/
-        margin-left: auto;
-        margin-right:auto;
         font-weight: 500;
-        width: 93.5%;
+        font-size: 16px;
+        width: 93.5%;/*這裡因為要讓背景圖片都塞入所以要設表格的長寬*/
         height: 35px;
         color: #000000;
-        font-size: 16px;
         background-image:url(/images/menu1.png) ;
     }
     .menu2:hover{
