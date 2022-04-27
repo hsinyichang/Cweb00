@@ -32,7 +32,7 @@ section>*{
     flex-basis: 1000px;
     height: 65px;
 }
-/*-------------------------------------------------*/
+/*-----------------計算裡面的減號都一定要加空白-----------------------*/
 .aside{/*左區塊*/
     flex-basis: 215px;
     height: calc(768px - 65px - 20px);/*左側的高*/
@@ -87,7 +87,7 @@ section>*{
         font-family: '標楷體';
         font-size: 24px;
         color: #0000FF;
-        padding: 0 calc((100%- 770px -2px)/2);
+        padding: 0 calc((100% - 770px - 2px)/2);
     }
     .content{/*網頁內容區*/
         flex-basis: 654px;
