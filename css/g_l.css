@@ -34,6 +34,14 @@
     margin-top: 10px;
     text-align: center;
 }
+button{
+    text-decoration:underline;
+    color: blue;
+    font-family: '標楷體';
+    font-size: 18px;
+}
 button:hover{
+color: chocolate;
+font-size: 20px;
 
 }
