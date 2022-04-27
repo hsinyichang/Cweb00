@@ -41,29 +41,31 @@ section>*{
     
     .menu{/*選單區*/
         flex-basis: calc(100% - 25px);/*因為這個區塊為column，所以basis為高度*/
-        font-family: '標楷體';
         text-align: center;
     }
-    table{/*按鈕區每個表格上下10px*/
     
-        margin: 10px auto;
-    }
     .menu1{/*社團介紹*/
         font-weight: 500;
         font-size: 24px;
         color: #FF00FF;
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black; */
+        text-decoration: underline black;
+        margin: 10px auto;/*格子有做置中，所以字也會置中*/
+        
     }
-    .menu2{/*6個社團的表格*/
+    .menu a{/*以下6個社團的超連結*/
+        display: inline-block;/*讓每個block會有空白，如果是用display:block的話就在自己設margin*/
         font-weight: 500;
         font-size: 16px;
-        width: 93.5%;/*這裡因為要讓背景圖片都塞入所以要設表格的長寬*/
-        height: 35px;
+        width: 200px;/*背景圖的尺寸大小*/
+        height: 35px;/*背景圖的尺寸大小*/
         color: #000000;
-        background-image:url(/images/menu1.png) ;
+        background:url(../images/menu1.png) no-repeat;
+        padding-top: 10px;/*可讓文字置中*/
+        text-decoration: none;
     }
-    .menu2:hover{
-        background-image: url(/images/menu2.png);
+    .menu a:hover{
+        background:url(../images/menu2.png) no-repeat;
     }
     .update{/*日期更新區*/
     flex-basis: 25px;
