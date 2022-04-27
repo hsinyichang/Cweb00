@@ -82,17 +82,17 @@ section>*{
 .menu{
     text-align: center;
 }
-table{
+table{/*按鈕區每個表格上下10px*/
     
     margin: 10px auto;
 }
-.menu1{
+.menu1{/*社團介紹*/
     font-weight: 500;
     font-size: 24px;
     color: #FF00FF;
     border-bottom: 1px solid black;
 }
-.menu2{
+.menu2{/*6個社團的表格*/
     margin-left: auto;
     margin-right:auto;
     font-weight: 500;
